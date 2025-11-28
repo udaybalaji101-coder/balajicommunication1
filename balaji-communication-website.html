@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji Communication - Best Printout and Photocopy Cyber Cafe in Sagarpur</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .contact-header {
+            text-align: right;
+        }
+
+        .contact-header a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+
+        .rating {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #f0f0f0;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23667eea" width="1200" height="400"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .services {
+            padding: 4rem 0;
+            background: #f9f9f9;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #667eea;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .about {
+            padding: 4rem 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .contact {
+            padding: 4rem 0;
+            background: #f9f9f9;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .contact-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card p {
+            margin: 0.5rem 0;
+        }
+
+        .contact-card a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .map-container {
+            margin-top: 2rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .header-content {
+                text-align: center;
+            }
+
+            .contact-header {
+                text-align: center;
+                margin-top: 1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <h1>Balaji Communication</h1>
+                    <p class="tagline">Best Printout and Photocopy Cyber Cafe in Sagarpur</p>
+                    <div class="rating">★★★★★ 4.8 (4 Google Reviews)</div>
+                </div>
+                <div class="contact-header">
+                    <a href="tel:09313964125">📞 093139 64125</a>
+                    <a href="https://wa.me/9313964125">💬 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Your One-Stop Center for All Digital Services</h2>
+            <p>Fast, Accurate, and Affordable Solutions in Sagarpur, Delhi</p>
+            <a href="tel:09313964125" class="btn">Call Now</a>
+            <a href="#services" class="btn">Our Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>📄 Printing Services</h3>
+                    <p>High-quality printing with quick service. We handle all your printing needs with state-of-the-art machines.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📋 Xerox & Photocopying</h3>
+                    <p>Fast and accurate photocopying services for documents of all sizes.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📝 Online Documentation</h3>
+                    <p>Complete assistance with online form filling and government documentation.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🖼️ PVC Card Printing</h3>
+                    <p>Professional PVC card printing for ID cards, membership cards, and more.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📸 Passport Photos</h3>
+                    <p>Passport-size photos with instant printing facility.</p>
+                </div>
+                <div class="service-card">
+                    <h3>💳 Bill Payment & Recharge</h3>
+                    <p>Mobile recharge and bill payment services at your convenience.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📅 Online Booking</h3>
+                    <p>Assistance with online booking services for various applications.</p>
+                </div>
+                <div class="service-card">
+                    <h3>☎️ Telecom Services</h3>
+                    <p>Complete telecom solutions and online applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div>
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        Balaji Communication is your one-stop center for all online documentation, printing, and digital services in Sagarpur, Delhi.
+                    </p>
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        We provide fast, accurate, and affordable solutions for online form filling, government documentation, printout, Xerox, PVC card printing, passport-size photos, mobile recharge, bill payment, and online booking services.
+                    </p>
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        With high-quality printing machines, quick service, and trusted support, we ensure customers get everything done easily in one place.
+                    </p>
+                </div>
+                <div>
+                    <h3 style="color: #667eea; margin-bottom: 1rem;">Why Choose Us?</h3>
+                    <ul style="list-style: none; font-size: 1.1rem;">
+                        <li style="margin: 1rem 0;">✓ High-quality printing machines</li>
+                        <li style="margin: 1rem 0;">✓ Quick and efficient service</li>
+                        <li style="margin: 1rem 0;">✓ Trusted and reliable support</li>
+                        <li style="margin: 1rem 0;">✓ Affordable pricing</li>
+                        <li style="margin: 1rem 0;">✓ One-stop solution for all digital needs</li>
+                        <li style="margin: 1rem 0;">✓ Experienced team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>📍 Address</h3>
+                    <p>RZ-465, 466, 407, Gali No. 15</p>
+                    <p>Shiv Puri, Jagdamba Vihar</p>
+                    <p>West Sagarpur, Palam, Delhi</p>
+                    <p>110046</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:09313964125">093139 64125</a></p>
+                    <h3 style="margin-top: 1.5rem;">💬 WhatsApp</h3>
+                    <p><a href="https://wa.me/9313964125">Chat with us</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>🕒 Hours</h3>
+                    <p>Open 24 hours</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">Updated by this business 1 week ago</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.8872665846937!2d77.0859!3d28.5637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMzJzQ5LjMiTiA3N8KwMDUnMDkuMiJF!5e0!3m2!1sen!2sin!4v1234567890" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Balaji Communication. All rights reserved.</p>
+            <p>Best Printout and Photocopy Cyber Cafe in Sagarpur, Delhi</p>
+        </div>
+    </footer>
+</body>
+</html>
